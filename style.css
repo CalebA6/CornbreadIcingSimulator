@@ -1,0 +1,132 @@
+@font-face {
+	font-family: BagelFatOne;
+	src: url(BagelFatOne-Regular.ttf);
+}
+
+@font-face {
+	font-family: LilitaOne;
+	src: url(LilitaOne-Regular.ttf);
+}
+
+body {
+	background-image: url(oven.png);
+	background-size: 100vw 100vh;
+}
+
+h1 {
+	font-family: BagelFatOne, sans-serif;
+	text-align: center;
+	font-size: 12vh;
+	
+	color: #D6BB1E;
+	-webkit-text-stroke: 0.1vh #FFFFFF;
+	
+	margin-top: 10vh;
+}
+
+
+
+button {
+	border-radius: 6vh;
+	border-color: #000000;
+	border-width: 0.5vh;
+	
+	font-family: LilitaOne;
+}
+
+#play {
+	height: 12vh;
+	width: 30vw;
+	
+	position: fixed;
+	top: 52vh;
+	left: 35vw;
+	
+	background-color: #B1EB34;
+	font-size: 9vh;
+}
+
+
+#bread-div {
+	width: 8vw;
+	height: 8vh;
+	
+	display: none;
+	position: fixed;
+	top: 70vh;
+	left: 83vw;
+}
+
+#bread {
+	width: 100%;
+	height: 100%;
+}
+
+
+#icing-div {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.ice {
+	background-color: #60C8FC;
+	
+	display: none;
+}
+
+
+#outcome {
+	border: solid;
+	border-color: #754301;
+	border-width: 1vh;
+	border-radius: 3vh;
+	background-color: #FFFF00;
+	
+	position: fixed;
+	width: 30vw;
+	left: 35vw;
+	height: 50vh;
+	top: 20vh;
+	
+	padding: 1vh;
+	
+	display: none;
+}
+
+h3 {
+	text-align: center;
+	font-family: BagelFatOne, sans-serif;
+	font-size: 4vh;
+	margin: 0.5vh;
+	color: #1A7FEB;
+}
+
+h2 {
+	font-family: BagelFatOne, sans-serif;
+	text-align: center;
+	font-size: 7vh;
+	
+	color: #FFFF00;
+	-webkit-text-stroke: 0.03vh #754301;
+}
+
+.score_change {
+	font-family: LilitaOne;
+	font-size: 4vh;
+}
+
+.playagain {
+	font-size: 3vh;
+	text-align: center;
+}
+
+.playagain_container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#score {
+	font-family: LilitaOne;
+}

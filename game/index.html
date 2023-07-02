@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<title>Cornbread Icing Simulator</title>
+	</head>
+	<link rel="stylesheet" href="../style.css">
+	<body>
+		<p id="score">Score: 0</p>
+		<div id="bread-div">
+			<img src="bread.png" id="bread">
+			<div id="icing-div">
+				<button class="ice" onclick="ice(true)">Ice</button>
+				<button class="ice" onclick="ice(false)">Don't Ice</button>
+			</div>
+		</div>
+		<div id="outcome">
+			<h3>That was<h3>
+			<h2 id="result">Cornbread</h2>
+			<p class="score_change">Score: </p>
+			<div class="playagain_container">
+				<button class="playagain" onclick="playAgain()">Play Again?</button>
+			</div>
+		</div>
+	</body>
+	<script src="script.js"></script>
+</html>
