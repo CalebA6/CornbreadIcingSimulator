@@ -8,6 +8,14 @@
 	src: url(LilitaOne-Regular.ttf);
 }
 
+
+.center_container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
 body {
 	background-image: url(oven.png);
 	background-size: 100vw 100vh;
@@ -16,7 +24,7 @@ body {
 h1 {
 	font-family: BagelFatOne, sans-serif;
 	text-align: center;
-	font-size: 12vh;
+	font-size: min(12vh, 14vw);
 	
 	color: #D6BB1E;
 	-webkit-text-stroke: 0.1vh #FFFFFF;
@@ -38,12 +46,8 @@ button {
 	height: 12vh;
 	width: 30vw;
 	
-	position: fixed;
-	top: 52vh;
-	left: 35vw;
-	
 	background-color: #B1EB34;
-	font-size: 9vh;
+	font-size: min(9vh, 12vw);
 }
 
 
@@ -97,7 +101,7 @@ button {
 h3 {
 	text-align: center;
 	font-family: BagelFatOne, sans-serif;
-	font-size: 4vh;
+	font-size: min(4vh, 6vw);
 	margin: 0.5vh;
 	color: #1A7FEB;
 }
@@ -105,7 +109,7 @@ h3 {
 h2 {
 	font-family: BagelFatOne, sans-serif;
 	text-align: center;
-	font-size: 7vh;
+	font-size: min(7vh, 6vw);
 	
 	color: #FFFF00;
 	-webkit-text-stroke: 0.03vh #754301;
@@ -113,18 +117,12 @@ h2 {
 
 .score_change {
 	font-family: LilitaOne;
-	font-size: 4vh;
+	font-size: min(4vh, 5vw);
 }
 
 .playagain {
-	font-size: 3vh;
+	font-size: min(3vh, 5vw);
 	text-align: center;
-}
-
-.playagain_container {
-	display: flex;
-	align-items: center;
-	justify-content: center;
 }
 
 #score {
