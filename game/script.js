@@ -35,6 +35,7 @@ function startBread() {
 	calculateRiseAndRun(x, y, xEnd, endY);
 	stepsLeft = steps;
 	document.getElementById('bread').setAttribute('src', 'bread.png');
+	bread.setAttribute('style', 'display: block; left: '+x.toString()+'vw; top: '+y.toString()+'vh;');
 	bread.setAttribute('style', 'display: block;');
 	//console.log(x);
 	setTimeout(moveBread, slideTime/steps);
@@ -94,10 +95,20 @@ function ice(icing) {
 	
 	const options = [
 		{name: 'Cornbread', score: icing => {
-			const score = Math.floor(Math.random() * 1000); if(icing) {return score * -1;} else {return 0;}
+			let score = Math.floor(Math.random() * 1000);
+			if(icing) {
+				
+				return score * -1;
+			} else {
+				return 0;
+			}
 		}}, 
 		{name: 'Cake', score: icing => {
-			if(icing) {return Math.floor(Math.random() * 1000);} else {return 0;}
+			if(icing) {
+				return Math.floor(Math.random() * 100);
+			} else {
+				return 0;
+			}
 		}}
 	];
 	const type = options[Math.floor(Math.random() * 2)];
@@ -110,7 +121,10 @@ function showResult(actual, score) {
 	
 	result.innerHTML = actual;
 	
-	scoreString = score.toString();
+	let scoreString = score.toString();
+	if((score == '0') && (actual == 'Cornbread')) {
+		scoreString = '-' + scoreString;
+	}
 	if(scoreString[0] != '+' && scoreString[0] != '-') {
 		scoreString = '+' + scoreString;
 	}
